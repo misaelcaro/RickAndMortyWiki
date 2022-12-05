@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+}
+
+
+.App {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(59, 57, 143);
+    background-image: url(./assets/img/background.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 2px;
+}
+
+.banner {
+    width: 100%;
+    height: 190px;
+}
+
+.searcher {
+    position: absolute;
+    top: 150px;
+    display: flex;
+    right: 35%;
+}
+
+
+
+.button-search {
+    border-radius: 10px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.button-search:hover {
+    background-color: aqua;
+}
+
+.search-list {
+    color: #fff;
+    text-align: center;
+    list-style: none;
+    position: relative;
+
+}
+
+.search-list_items:hover {
+    color: aqua;
+    cursor: pointer;
+    
+}
+
+
+
+
+.input {
+    border-radius: 10px;
+    height: 30px;
+    width: 300px;
+}
+
+
+.locationInfo {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 10px;
+    color: rgb(250, 244, 244);
+    background-color: #062226;
+    gap: 15rem;
+}
+
+
+.locationInfoh2 {
+    display: flex;
+    align-items: center;
+}
+
+.locationInfo>ul {
+    list-style: none;
+}
+
+.locationInfo>ul>li {
+    font-size: 1.5rem;
+}
+
+.portal {
+    height: 100%;
+    width: 100%;
+}
+
+.location-residents {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+
+}
+
+.residen_card {
+    background-color: #062226;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+img {
+    border-radius: 10px;
+}
+
+.resident-card-header {
+    position: relative;
+}
+
+.resident-card-status {
+    position: absolute;
+    top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 10px;
+    background-color: #062226;
+    border-end-end-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+.circle {
+    width: 5px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+
+.circle.Alive {
+    background-color: green;
+}
+
+.circle.Dead {
+    background-color: red;
+}
+
+.circle.unknown {
+    background-color: rgb(194, 183, 183);
+}
+
+
+
+
+.resident-card_body {
+    padding: 15PX;
+
+}
+
+
+
+.resident-card_body>ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.resident-card_body>ul>li {
+    display: flex;
+    flex-direction: column;
+}
+
+strong {
+    color: aqua;
+}
+
+
+.errorMessage {
+    color: #fff;
+    width: max-content;
+    background-color: red;
+    position: absolute;
+    padding: 5px 15px;
+    border-radius: 10px;
+
+}
+
+.errorMessage>p {
+    margin: 0;
+}
