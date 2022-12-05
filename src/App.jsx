@@ -63,7 +63,7 @@ function App() {
       <form onSubmit={handleSubmit}>
         <div className="searcher">
         <input className="input" id="searchValue" value={locationName} type="text" onChange={handelChangeImput}
-          placeholder="search dimension" />
+          placeholder="search dimension 1 to 126" />
         <button className="button-search" type="submit">Search</button>
         </div>
         {
