@@ -75,6 +75,7 @@ function App() {
       <LocationFilter locationName={locationName} getNewLocation={getNewLocation} />
       <LocationInfo location={location} />
       <ResidentList location={location} />
+      
     </div>
     
   )
