@@ -5,7 +5,7 @@
 
 .App {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: rgb(59, 57, 143);
+    background-color: rgb(3, 3, 3);
     background-image: url(./assets/img/background.png);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -19,14 +19,19 @@
 
 .banner {
     width: 100%;
-    height: 190px;
+    height: 360px;
+    object-fit:contain;
+
+
+
 }
 
 .searcher {
     top: 150px;
     display: flex;
     justify-content: center;
-  
+    padding: 40px;
+    border-color: aqua;
 
 }
 
@@ -34,11 +39,11 @@
     border-radius: 10px;
     background-color: #fff;
     cursor: pointer;
-    border-color: chartreuse;
+    border-color: aqua;
 }
 
 .button-search:hover {
-    background-color: aqua;
+    background-color: rgb(206, 218, 218);
 }
 
 .search-list {
@@ -59,7 +64,7 @@
 
 
 .input {
-    border-color: chartreuse;
+    border-color: aqua;
     border-radius: 10px;
     height: 30px;
     width: 300px;
@@ -68,7 +73,7 @@
 
 .locationInfo {
     text-align: center;
-    margin-top: 80px;
+    margin-top: 0px;
     margin-bottom: 10px;
     color: rgb(250, 244, 244);
     background-color: #062226;
@@ -83,6 +88,10 @@
 
 .locationInfo>ul {
     list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding-bottom: 10px;
 }
 
 .locationInfo>ul>li {
@@ -99,18 +108,29 @@
     flex-wrap: wrap;
     gap: 25px;
     justify-content: center;
+    padding-bottom: 150px;
 
 }
 
 .residen_card {
-    background-color: #062226;
+    background-color: #093b42;
     color: white;
     padding: 10px;
     border-radius: 10px;
+
 }
 
-img {
+.residen_card:hover {
+    background-color: #2c4447;
+}
+
+.imgResident{
     border-radius: 10px;
+    border-style: groove;
+}
+
+.imgResident:hover {
+    transform: scale(1.07);
 }
 
 .resident-card-header {
@@ -128,6 +148,9 @@ img {
     border-end-end-radius: 10px;
     border-top-right-radius: 10px;
 }
+.resident-card-status:hover{
+    border-radius: 10px;
+} 
 
 
 .circle {

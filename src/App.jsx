@@ -59,7 +59,7 @@ function App() {
   return (
    
     <div className="App">
-      <img className="banner" src="https://external-preview.redd.it/NWoz20GGSCtoOduOWFQvv0UfhMTYHqg8YUh0pvkmJrs.jpg?auto=webp&s=67e37f3d645553721e0984884a8e010e1030a513" alt="banner rick and morty" />
+      <img className="banner" src="https://cdn.shopify.com/s/files/1/0346/8063/5529/collections/rick-morty-collection-banner_1400x.jpg?v=1590095280" alt="banner rick and morty" />
       <form onSubmit={handleSubmit}>
         <div className="searcher">
         <input className="input" id="searchValue" value={locationName} type="text" onChange={handelChangeImput}
@@ -75,7 +75,7 @@ function App() {
       <LocationFilter locationName={locationName} getNewLocation={getNewLocation} />
       <LocationInfo location={location} />
       <ResidentList location={location} />
-      
+    
     </div>
     
   )

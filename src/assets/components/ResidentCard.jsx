@@ -13,7 +13,7 @@ const ResidentCard = ({ urlResident }) => {
             .then(res => {
                 setTimeout(()=>{
                     setResident(res.data)
-                }, 1000)
+                }, 1500)
             })
 
             .catch(err => console.log(err))
@@ -31,7 +31,7 @@ const ResidentCard = ({ urlResident }) => {
                 resident ? (
                     <>
                         <header className= "resident-card-header">
-                            <img src={resident?.image} alt="" />
+                            <img className="imgResident" src={resident?.image} alt="" />
                             <div className="resident-card-status">
                                 <div className={`circle ${resident?.status}`}></div>
                                 <span> {resident?.status}</span>
