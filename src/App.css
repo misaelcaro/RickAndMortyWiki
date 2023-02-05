@@ -108,7 +108,7 @@
     flex-wrap: wrap;
     gap: 25px;
     justify-content: center;
-    padding-bottom: 150px;
+    padding-bottom: 10px;
 
 }
 
@@ -214,3 +214,24 @@ strong {
 .errorMessage>p {
     margin: 0;
 }
+
+.pagination >ul{
+    background-color:  #020202;
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: center;
+    list-style: none;
+    color:aqua;
+    gap: 15px;
+    cursor: pointer;
+    font-size: x-large;
+    
+}
+
+.pagination >ul li:hover{
+    color: #000000;
+background-color: aqua;
+border-radius: 50px;
+
+   }
+

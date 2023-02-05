@@ -1,11 +1,11 @@
 import React from 'react'
 import ResidentCard from './ResidentCard'
 
-const ResidentList = ({location}) => {
+const ResidentList = ({location,pagination}) => {
     return (
         <section className="location-residents">
             {
-                location?.residents.map(urlResident => (
+                pagination()?.map(urlResident => (
                     <ResidentCard key={urlResident} urlResident={urlResident} />
                 ))
             }

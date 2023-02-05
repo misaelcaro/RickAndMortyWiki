@@ -2,10 +2,11 @@ import axios from 'axios'
 import React, { useEffect } from 'react'
 import { useState } from 'react'
 
-const LocationFilter = ({ locationName, getNewLocation }) => {
+const LocationFilter = ({ locationName, getNewLocation,setPage }) => {
     const [locationsOptions, setlocationsOptions] = useState()
 
     useEffect(() => {
+        setPage(1)
         if(!locationName){
             setlocationsOptions()
             return
